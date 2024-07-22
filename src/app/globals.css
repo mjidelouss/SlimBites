@@ -16,6 +16,12 @@
   }
 }
 
+@layer base {
+  body {
+    @apply bg-white text-black dark:bg-black dark:text-white;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

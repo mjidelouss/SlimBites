@@ -343,27 +343,27 @@ const WeightLossCalculator: React.FC = () => {
                 </tbody>
               </table>
               
-              <p className={`text-sm text-gray-600 dark:text-gray-400 ${acme.className}`}>
-                Note: Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
+              <p className={`text-sm text-center text-gray-600 dark:text-gray-400 ${acme.className}`}>
+                <span className="text-yellow-400">Note:</span> Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
               </p>
 
               <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-gray-800 dark:text-white ${angkor.className}`}>Exercise Schedule</h3>
               {results.exerciseSchedule.map((day, index) => (
                 <div key={index} className="mb-4">
-                  <h4 className={`text-md font-semibold text-red-800 dark:text-white ${acme.className}`}>{day.day}</h4>
+                  <h4 className={`text-md font-semibold text-red-700 dark:text-white ${acme.className}`}>{day.day}</h4>
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="text-gray-700 dark:text-gray-300">
+                      <tr className="text-gray-700 dark:text-gray-400">
                         <th className="text-left">Exercise</th>
-                        <th>Sets</th>
-                        <th>Reps</th>
-                        <th>Rest (sec)</th>
+                        <th className="">Sets</th>
+                        <th className="">Reps</th>
+                        <th className="">Rest (sec)</th>
                       </tr>
                     </thead>
                     <tbody>
                       {day.exercises.map((exercise, exIndex) => (
                         <tr key={exIndex} className="text-gray-600 dark:text-gray-400">
-                          <td>{exercise.name}</td>
+                          <td className={` ${acme.className}`}>{exercise.name}</td>
                           <td className={` text-center ${cinzel.className} `}>{exercise.sets}</td>
                           <td className={` text-center ${cinzel.className} `}>{exercise.reps}</td>
                           <td className={` text-center ${cinzel.className} `}>{exercise.rest}</td>
@@ -371,7 +371,7 @@ const WeightLossCalculator: React.FC = () => {
                       ))}
                     </tbody>
                   </table>
-                  <p className={`mt-2 text-sm text-gray-600 dark:text-gray-400 ${acme.className}`}>
+                  <p className={`mt-2 text-sm text-center text-gray-600 dark:text-gray-400 ${acme.className}`}>
                     Remember to drink water between exercises: 200-300ml every 15-20 minutes.
                   </p>
                 </div>

@@ -306,7 +306,7 @@ const WeightLossCalculator: React.FC = () => {
         <div className="">
           {results && (
             <div className="bg-gray-200 dark:bg-gray-700 p-4 rounded animate-fade-in">
-              <h2 className={`text-xl font-semibold text-center mb-2 text-green-800 dark:text-green-400 ${angkor.className}`}>Daily Plan</h2>
+              <h2 className={`text-xl font-semibold text-center mb-2 text-green-600 dark:text-green-400 ${angkor.className}`}>Daily Plan</h2>
               <div className='grid grid-cols-2 gap-2'>
                 <p className={`text-gray-700 dark:text-gray-300 ${acme.className}`}>Calories = <span className={`text-blue-400 ${cinzel.className}`}>{results.calories}</span></p>
                 <p className={`text-gray-700 dark:text-gray-300 ${acme.className}`}>Protein = <span className={`text-blue-400 ${cinzel.className}`}>{results.protein}g</span></p>

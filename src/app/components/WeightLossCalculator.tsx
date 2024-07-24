@@ -333,7 +333,7 @@ const WeightLossCalculator: React.FC = () => {
                 <tbody>
                   {results.mealPlan.map((meal, index) => (
                     <tr key={index} className="text-gray-600 dark:text-gray-400">
-                      <td>{meal.name}</td>
+                      <td className={` ${acme.className}`}>{meal.name}</td>
                       <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.calories}</td>
                       <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.protein}</td>
                       <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.carbs}</td>
@@ -347,10 +347,10 @@ const WeightLossCalculator: React.FC = () => {
                 Note: Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
               </p>
 
-              <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-green-800 dark:text-green-400 ${angkor.className}`}>Exercise Schedule</h3>
+              <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-green-600 dark:text-green-400 ${angkor.className}`}>Exercise Schedule</h3>
               {results.exerciseSchedule.map((day, index) => (
                 <div key={index} className="mb-4">
-                  <h4 className={`text-md font-semibold text-red-700 dark:text-red-400 ${acme.className}`}>{day.day}</h4>
+                  <h4 className={`text-md font-semibold text-gray-700 dark:text-red-400 ${acme.className}`}>{day.day}</h4>
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="text-gray-700 dark:text-gray-400">

@@ -334,23 +334,23 @@ const WeightLossCalculator: React.FC = () => {
                   {results.mealPlan.map((meal, index) => (
                     <tr key={index} className="text-gray-600 dark:text-gray-400">
                       <td>{meal.name}</td>
-                      <td className={` text-center ${cinzel.className} `}>{meal.calories}</td>
-                      <td className={` text-center ${cinzel.className} `}>{meal.protein}</td>
-                      <td className={` text-center ${cinzel.className} `}>{meal.carbs}</td>
-                      <td className={` text-center ${cinzel.className} `}>{meal.fat}</td>
+                      <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.calories}</td>
+                      <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.protein}</td>
+                      <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.carbs}</td>
+                      <td className={` text-center ${cinzel.className} text-blue-400 `}>{meal.fat}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
               
               <p className={`text-sm text-center text-gray-600 dark:text-gray-400 ${acme.className}`}>
-                <span className="text-yellow-400">Note:</span> Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
+                Note Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
               </p>
 
               <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-gray-800 dark:text-white ${angkor.className}`}>Exercise Schedule</h3>
               {results.exerciseSchedule.map((day, index) => (
                 <div key={index} className="mb-4">
-                  <h4 className={`text-md font-semibold text-red-700 dark:text-white ${acme.className}`}>{day.day}</h4>
+                  <h4 className={`text-md font-semibold text-red-700 dark:text-red-400 ${acme.className}`}>{day.day}</h4>
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="text-gray-700 dark:text-gray-400">
@@ -364,9 +364,9 @@ const WeightLossCalculator: React.FC = () => {
                       {day.exercises.map((exercise, exIndex) => (
                         <tr key={exIndex} className="text-gray-600 dark:text-gray-400">
                           <td className={` ${acme.className}`}>{exercise.name}</td>
-                          <td className={` text-center ${cinzel.className} `}>{exercise.sets}</td>
-                          <td className={` text-center ${cinzel.className} `}>{exercise.reps}</td>
-                          <td className={` text-center ${cinzel.className} `}>{exercise.rest}</td>
+                          <td className={` text-center ${cinzel.className} text-blue-400`}>{exercise.sets}</td>
+                          <td className={` text-center ${cinzel.className} text-blue-400`}>{exercise.reps}</td>
+                          <td className={` text-center ${cinzel.className} text-blue-400`}>{exercise.rest}</td>
                         </tr>
                       ))}
                     </tbody>

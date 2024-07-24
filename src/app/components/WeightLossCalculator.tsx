@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { acme, angkor, audiowide, cinzel, honk } from './fonts';
+import Header from './Header';
 
 interface Results {
   calories: number;
@@ -101,6 +102,7 @@ const WeightLossCalculator: React.FC = () => {
   return (
     <div className="bg-gray-200 dark:bg-gray-800 p-8 rounded-lg shadow-md w-full max-w-md transition-colors duration-300">
       <h1 className={`text-5xl font-bold text-center mb-4 text-gray-800 dark:text-white ${honk.className}`}>Slim Bites</h1>
+      <Header/>
       <div className="grid grid-cols-2 gap-4 mb-4">
         <div>
           <label className={`block text-gray-700 dark:text-gray-300 mb-2 ${audiowide.className}`}>Weight (kg):</label>

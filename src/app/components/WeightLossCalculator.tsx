@@ -306,7 +306,7 @@ const WeightLossCalculator: React.FC = () => {
         <div className="">
           {results && (
             <div className="bg-gray-200 dark:bg-gray-700 p-4 rounded animate-fade-in">
-              <h2 className={`text-xl font-semibold text-center mb-2 text-gray-800 dark:text-white ${angkor.className}`}>Daily Plan</h2>
+              <h2 className={`text-xl font-semibold text-center mb-2 text-green-800 dark:text-green-400 ${angkor.className}`}>Daily Plan</h2>
               <div className='grid grid-cols-2 gap-2'>
                 <p className={`text-gray-700 dark:text-gray-300 ${acme.className}`}>Calories = <span className={`text-blue-400 ${cinzel.className}`}>{results.calories}</span></p>
                 <p className={`text-gray-700 dark:text-gray-300 ${acme.className}`}>Protein = <span className={`text-blue-400 ${cinzel.className}`}>{results.protein}g</span></p>
@@ -319,15 +319,15 @@ const WeightLossCalculator: React.FC = () => {
                 <p className={`text-gray-700 dark:text-gray-300 ${acme.className}`}>Workouts = <span className={`text-blue-400 ${cinzel.className}`}>{results.workoutFrequency} times/week</span></p>
               </div>
               
-              <h3 className={`text-xl font-semibold mt-4 mb-2 text-center text-gray-800 dark:text-white ${angkor.className}`}>Meal Plan</h3>
+              <h3 className={`text-xl font-semibold mt-4 mb-2 text-center text-green-800 dark:text-green-400 ${angkor.className}`}>Meal Plan</h3>
               <table className="w-full text-sm mb-4">
                 <thead>
                   <tr className="text-gray-700 dark:text-gray-300">
                     <th className="text-left">Meal</th>
-                    <th>Calories</th>
-                    <th>Protein (g)</th>
-                    <th>Carbs (g)</th>
-                    <th>Fat (g)</th>
+                    <th className={` ${acme.className} `}>Calories</th>
+                    <th className={` ${acme.className} `}>Protein (g)</th>
+                    <th className={` ${acme.className} `}>Carbs (g)</th>
+                    <th className={` ${acme.className} `}>Fat (g)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -347,7 +347,7 @@ const WeightLossCalculator: React.FC = () => {
                 Note: Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
               </p>
 
-              <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-gray-800 dark:text-white ${angkor.className}`}>Exercise Schedule</h3>
+              <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-green-800 dark:text-green-400 ${angkor.className}`}>Exercise Schedule</h3>
               {results.exerciseSchedule.map((day, index) => (
                 <div key={index} className="mb-4">
                   <h4 className={`text-md font-semibold text-red-700 dark:text-red-400 ${acme.className}`}>{day.day}</h4>

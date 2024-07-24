@@ -343,8 +343,8 @@ const WeightLossCalculator: React.FC = () => {
                 </tbody>
               </table>
               
-              <p className={`text-sm text-center text-gray-600 dark:text-gray-400 ${acme.className}`}>
-                Note Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
+              <p className={`text-sm text-center text-purple-600 dark:text-purple-400 ${acme.className}`}>
+                Note: Post-workout meal (usually dinner) has slightly higher protein and carbs to aid recovery.
               </p>
 
               <h3 className={`text-lg font-semibold mt-4 mb-2 text-center text-gray-800 dark:text-white ${angkor.className}`}>Exercise Schedule</h3>
@@ -371,7 +371,7 @@ const WeightLossCalculator: React.FC = () => {
                       ))}
                     </tbody>
                   </table>
-                  <p className={`mt-2 text-sm text-center text-gray-600 dark:text-gray-400 ${acme.className}`}>
+                  <p className={`mt-2 text-sm text-center text-purple-600 dark:text-purple-400 ${acme.className}`}>
                     Remember to drink water between exercises: 200-300ml every 15-20 minutes.
                   </p>
                 </div>
